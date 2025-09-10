@@ -7,21 +7,33 @@ A simple web application that converts English speech/text to Hindi with audio p
 - **🎤 Voice Input**: Record English speech using browser's Web Speech API
 - **✏️ Text Input**: Type or edit English text manually
 - **🌐 Translation**: Google Translate API for English → Hindi conversion
-- **🔊 Audio Playback**: Hindi speech synthesis
+- **🔊 Audio Playback**: Hindi speech synthesis using pre-trained models
 - **📱 Responsive**: Works on desktop and mobile browsers
 
-## 📁 Files
+## 🛠️ Technologies Used
+
+- **Backend**: Python, Flask
+- **Speech Recognition**: Vosk, Web Speech API
+- **Translation**: Google Translate API
+- **Text-to-Speech**: gTTS, IndicTrans models
+- **Frontend**: HTML, CSS, JavaScript
+- **Deployment**: Ready for local hosting or cloud deployment
+
+##  Project Structure
 
 ```
 speech_translator_website/
 ├── app.py                 # Main Flask application
 ├── requirements.txt       # Python dependencies
-├── run.bat               # Windows startup script
 ├── run.sh                # Linux/Mac startup script
+├── .gitignore            # Git ignore file
 ├── models/               # TTS model files
 ├── modules/              # Application modules
-├── templates/           # HTML templates
-└── uploads/            # Temporary files
+│   ├── stt.py           # Speech-to-text module
+│   ├── translator.py    # Translation module
+│   └── tts.py           # Text-to-speech module
+└── templates/           # HTML templates
+    └── index.html       # Main web interface
 ```
 
 ## 🛠️ Quick Start
@@ -30,27 +42,26 @@ speech_translator_website/
 - Python 3.10+
 - Modern web browser (Chrome, Firefox, Safari, Edge)
 
-### Run the Application
+### Installation & Setup
 
-**Windows:**
-```cmd
-cd speech_translator_website
-run.bat
-```
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/gauthamt1008/speech-to-speech-en-to-hi-translator.git
+   cd speech-to-speech-en-to-hi-translator
+   ```
 
-**Linux/Mac:**
-```bash
-cd speech_translator_website
-chmod +x run.sh
-./run.sh
-```
+2. **Install dependencies:**
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-**Manual:**
-```bash
-cd speech_translator_website
-pip install -r requirements.txt
-python app.py
-```
+3. **Run the application:**
+   ```bash
+   python app.py
+   ```
+
+4. **Open in browser:**
+   Navigate to `http://localhost:5000`
 
 Then open: `http://localhost:5000`
 
