@@ -55,6 +55,8 @@ speech_translator_website/
    pip install -r requirements.txt
    ```
 
+   **Note:** The `models/` folder contains pre-trained models required for text-to-speech functionality. If not present, download and place them in the `models/` directory.
+
 3. **Run the application:**
    ```bash
    python app.py
