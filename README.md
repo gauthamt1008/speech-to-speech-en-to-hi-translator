@@ -13,9 +13,9 @@ A simple web application that converts English speech/text to Hindi with audio p
 ## 🛠️ Technologies Used
 
 - **Backend**: Python, Flask
-- **Speech Recognition**: Vosk, Web Speech API
+- **Speech Recognition**: Google Speech API, Web Speech API
 - **Translation**: Google Translate API
-- **Text-to-Speech**: gTTS, IndicTrans models
+- **Text-to-Speech**: Google TTS API, gTTS, pyttsx3
 - **Frontend**: HTML, CSS, JavaScript
 - **Deployment**: Ready for local hosting or cloud deployment
 
@@ -27,7 +27,6 @@ speech_translator_website/
 ├── requirements.txt       # Python dependencies
 ├── run.sh                # Linux/Mac startup script
 ├── .gitignore            # Git ignore file
-├── models/               # TTS model files
 ├── modules/              # Application modules
 │   ├── stt.py           # Speech-to-text module
 │   ├── translator.py    # Translation module
