@@ -55,11 +55,7 @@ speech_translator_website/
    pip install -r requirements.txt
    ```
 
-   **Note:** The `models/` folder contains pre-trained models required for speech recognition and text-to-speech functionality. If not present, download the following models and place them in the `models/` directory:
-
-   - **Vosk English Model**: Download `vosk-model-en-us-0.22` from [Vosk Models](https://alphacephei.com/vosk/models) and extract to `models/vosk-model-en-us-0.22/`
-   - **IndicTrans Model**: Download from [Hugging Face](https://huggingface.co/ai4bharat/indictrans2-en-hi) and place in `models/indictrans2/`
-   - **TTS Hindi Model**: Download the required TTS models for Hindi and place in `models/tts/hi/`
+   **Note:** The project uses APIs for speech recognition, translation, and text-to-speech, so no local models are required. The `models/` folder is included for potential future offline functionality but is not currently used.
 
 3. **Run the application:**
    ```bash
