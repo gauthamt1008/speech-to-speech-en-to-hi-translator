@@ -54,7 +54,6 @@ speech_translator_website/
    pip install -r requirements.txt
    ```
 
-   **Note:** The project uses APIs for speech recognition, translation, and text-to-speech, so no local models are required. The `models/` folder is included for potential future offline functionality but is not currently used.
 
 3. **Run the application:**
    ```bash
